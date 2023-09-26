@@ -1,0 +1,42 @@
+.top-head-wish-hk{
+    width:90vw;
+    padding-left:5vw;
+    padding-top: 20px;
+    padding-right:5vw;
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+    height: 70vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+}
+
+.top-head-wish-hk::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.wishcards-hk-line{
+    margin-bottom: 77px;
+    margin-left: 90px;
+}
+
+.top-head-wish-hk-line{
+    padding-top:6vh;
+    text-align: center;
+}
+
+.top-head-wish-hk-text{
+    font-size: 35px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    /* height:200px; */
+    
+}
+
+.top-head-wish-hk-text img{
+   height:13vh;
+   width:20vw;
+
+}

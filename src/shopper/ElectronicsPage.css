@@ -1,0 +1,84 @@
+.electronics-products{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.top-electronics-single-page{
+    margin-top:100px;
+}
+
+.inner-div-hk-electronics{
+    display:flex;
+    width:100vw;
+    height:40vh;
+}
+
+.inner-inner-div-hk-electronics-1{
+    width:15vw;
+    height:40vh;
+    padding-left: 60px;
+}
+
+.inner-inner-div-hk-electronics-2{
+    width:5vw;
+    height:40vh;
+    
+    /* padding-left: 70px; */
+}
+
+.inner-inner-div-hk-electronics-3{
+    width:20vw;
+    height:40vh;
+    display: flex;
+}
+
+.inner-inner-div-hk-electronics-3 h1{
+    position: relative;
+    left:0;
+    font-size: 4rem;
+    font-family: R;
+    /* padding-left:30px; */
+    padding-top:22vh;
+}
+
+.inner-inner-div-hk-electronics-4{
+    width:40vw;
+    height:40vh;
+}
+
+/* .inner-inner-div-hk-electronics-5{
+    width:20vw;
+    height:40vh;
+} */
+
+.inner-inner-div-hk-electronics-image{
+    height:40vh;
+    padding-top:14px;
+    background-size: cover;
+}
+
+.inner-inner-div-hk-electronics-image-tv{
+    height:40vh;
+    padding-top:30px;
+    padding-left: 150px;
+    background-size: cover;
+    z-index: 2;
+}
+
+.inner-inner-div-hk-electronics-image-red{
+    height:38vh;
+    background-size: cover;
+    z-index: 0;
+    
+    /* padding-bottom: 40px; */
+}
+
+.inner-inner-div-hk-electronics-image-google{
+    height:50vh;
+    background-size: cover;
+    padding-bottom: 45px;
+}
+
+

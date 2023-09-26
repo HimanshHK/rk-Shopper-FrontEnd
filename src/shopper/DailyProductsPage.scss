@@ -1,0 +1,201 @@
+.groceries-products {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+  
+  .top-groceries-single-page {
+    margin-top: 25px;
+  }
+  
+  .inner-div-hk-groceries {
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+  }
+  
+  .inner-inner-div-hk-groceries-1 {
+    width: 15vw;
+    height: 40vh;
+    padding-left: 60px;
+  }
+  
+  .inner-inner-div-hk-groceries-2 {
+    width: 5vw;
+    height: 40vh;
+  
+    /* padding-left: 70px; */
+  }
+  
+  .inner-inner-div-hk-groceries-3 {
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+  }
+  
+  .inner-inner-div-hk-groceries-3 h1 {
+    position: relative;
+    left: 0;
+    font-size: 4rem;
+    font-family: R;
+    padding-left: 30px;
+    padding-top: 22vh;
+  }
+  
+  .inner-inner-div-hk-groceries-4 {
+    width: 40vw;
+    height: 40vh;
+  }
+  
+  /* .inner-inner-div-hk-electronics-5{
+      width:20vw;
+      height:40vh;
+  } */
+  
+  .inner-inner-div-hk-groceries-image {
+    height: 40vh;
+    padding-top: 14px;
+    background-size: cover;
+  }
+  
+  .inner-inner-div-hk-groceries-image-tv {
+    height: 40vh;
+    padding-top: 30px;
+    padding-left: 150px;
+    background-size: cover;
+    z-index: 2;
+  }
+  
+  .inner-inner-div-hk-groceries-image-red {
+    height: 40vh;
+    background-size: cover;
+    z-index: 0;
+    /* padding-bottom: 40px; */
+  }
+  
+  .inner-inner-div-hk-groceries-image-google {
+    height: 50vh;
+    background-size: cover;
+    padding-bottom: 45px;
+  }
+  
+  
+  .just-a-banner-img-hk-groceries{
+      display: flex;
+      height:30vh;
+      margin-top: 30px;
+      justify-content: center;
+      align-items: space-between;
+      
+  }
+  
+  .banner-image-products-hk-groceries{
+      background-image:url("https://img.freepik.com/premium-photo/fresh-fruit-wih-water-splash_785361-309.jpg?w=360");
+      height:25vh;
+      width:15vw;
+      background-size: cover;
+  
+  }
+  
+  .banner-image-products-hk-right-between-groceries{
+      background-image:url("https://img.freepik.com/premium-photo/fruits-splash-flying-fall-juice-isolated-white-background_145182-5167.jpg");
+      height:28vh;
+      width:21vw;
+      // margin-top:40px;
+      padding-top:10px;
+      background-size: cover;
+  }
+  
+  .banner-image-products-hk-right-groceries{
+      background-image:url("https://img.freepik.com/premium-photo/there-is-circle-fruits-vegetables-circle-generative-ai_927978-8665.jpg?w=360");
+      height:28vh;
+      width:18vw;
+      /* margin-left:20px; */
+      padding-top:10px;
+      background-size: cover;
+  }
+
+  .daily-carousel-imag-hk{
+    height: 400px;
+    width:300px;
+    background-size: cover;
+    border-radius: 10px;
+    border:solid 5px #e0e0e0;
+    z-index: 2;
+  }
+
+  
+  
+
+  
+/*SCSS for icon-item*/
+  /* Variables */
+$easing: cubic-bezier(1,.015,.295,1.225);
+
+/* Cards Icon */
+.icon-cards-hk-groceries {
+  width: 180px;
+  height: 160px;
+  transform: translate(-50%,-50%);
+  perspective: 1000px;
+
+  /* This rotates with the animation */
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: translateZ(-145px) rotateY(0);
+    animation: carousel-hk-groceries 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
+  }
+
+  /* Individual cards */
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 150px;
+    background: #ff257a;
+    opacity: .8;
+    border-radius: 6px;
+
+    &:nth-child(1) {
+      transform: rotateY(1*72deg) translateZ(145px);
+    }
+    &:nth-child(2) {
+      transform: rotateY(2*72deg) translateZ(145px);
+    }
+    &:nth-child(3) {
+      transform: rotateY(3*72deg) translateZ(145px);
+    }
+    &:nth-child(4) {
+      transform: rotateY(4*72deg) translateZ(145px);
+    }
+    &:nth-child(5) {
+      transform: rotateY(5*72deg) translateZ(145px);
+    }
+  }
+}
+
+/* Animation */
+@keyframes carousel-hk-groceries {
+  0%,  15% { transform: translateZ(-145px) rotateY(0); }
+  25%, 40% { transform: translateZ(-145px) rotateY(-72deg); }
+  50%, 65% { transform: translateZ(-145px) rotateY(-144deg); }
+  75%, 90% { transform: translateZ(-145px) rotateY(-216deg); }
+}
+
+
+.hk-cards-icon-div-groceries{
+  height:40vw;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  padding-top: 18vh;
+  // margin-left: 10vw;
+}
+

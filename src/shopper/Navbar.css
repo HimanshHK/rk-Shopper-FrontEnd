@@ -1,0 +1,80 @@
+/* * {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 13px;
+} */
+
+.ul-nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.header-nav {
+  font-weight: 600;
+  font-size: 13px;
+  background-color: white;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  width: 100vw;
+  opacity: 0.76;
+  z-index: 100;
+  transition: all 0.2s ease-in-out;
+}
+
+.li-nav {
+  font-family: "Raleway", sans-serif;
+  margin-top: 9px;
+  margin-right: 0vw;
+  margin-left: 2.6vw;
+  margin-bottom: 10px;
+  color: black;
+  cursor:pointer;
+}
+
+.li-nav-inside {
+  color: black;
+}
+
+.highlight {
+  height: 390px;
+  opacity: 0.80;
+}
+
+.logo-shopper-hk {
+  height: 20px;
+  width: 33px;
+  margin-top: 0px;
+  padding-bottom: 4px;
+}
+
+.hidden-div {
+  visibility: hidden;
+}
+
+.hidden-nav-part {
+  position: relative;
+}
+
+.ul-nav-side {
+  display: flex;
+}
+
+.side-new-hk {
+  margin-left: 10vw;
+}
+
+.icon-hk-nav {
+  margin-bottom: 10px;
+}
+
+.nav-link-hk-bar{
+  color:black;
+}

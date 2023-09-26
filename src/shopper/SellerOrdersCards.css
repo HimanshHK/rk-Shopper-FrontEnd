@@ -1,0 +1,165 @@
+.seller-orders-outer-div-hk{
+    position:relative;
+    height:300px;
+    width:300px;
+    margin-bottom:10px;
+}
+
+.seller-orders-inner-div-hk{
+    position: absolute;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+    height: 217px;
+    width: 171px;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+    /* opacity: 0.5; */
+    z-index: 2;
+    border-radius: 7px;
+    box-shadow: 3px 3px 10px #888;
+}
+
+.seller-inner-description-div-hk{
+    position: absolute;
+    z-index: 3;
+    bottom: 6px;
+    right: 13px;
+    font-size: 15px;
+    font-family: Raleway;
+}
+
+.seller-inner-description-left-div-hk{
+    position: absolute;
+    z-index: 3;
+    bottom: 6px;
+    left: 13px;
+    font-size: 15px;
+    font-family: Raleway;
+}
+
+.seller-orders-inner-down-div-hk{
+    position: absolute;
+    height: 220px;
+    width: 170px;
+    left: 29px;
+    top: 24px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px #888;
+}
+
+.seller-orders-inner-down-right-down-div-hk{
+    position:absolute;
+    right: 10px;
+    bottom: 2px;
+    font-size: 15px;
+    font-family: Raleway;
+    cursor:pointer;
+    font-weight: bolder;
+}
+
+.image-seller-order-inner-hk{
+    position:relative;
+    top: 19px;
+    /* left: 29px; */
+    max-height: 142px;
+    width: 115px;
+    background-size: cover;
+}
+
+.slite-outer-image-seller-order-inner-hk{
+    height: 142px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seller-inner-description-name-div-hk{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 20px;
+    /* left: 45px; */
+    font-size: 14px;
+    font-weight: 622;
+    color: #324D59;
+    font-family: Raleway;
+    /* font-weight: bolder; */
+}
+
+.seller-orders-inner-down-right-down-div-hk-icon{
+    position:relative;
+    left:152px;
+    top:100px;
+    height:20px;
+    width:20px;
+    cursor:pointer;
+    
+}
+
+.inner-address-seller-order-hk-card{
+    position: relative;
+    top: 45px;
+    left: 51px;
+    font-size: 16px;
+    font-family: Raleway;
+    color: purple;
+    font-weight: bolder;
+}
+
+.inner-down-address-seller-order-hk-card{
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    font-family: Raleway;
+    justify-content: center;
+    top: 44px;
+    /* height: 120px; */
+    width: 171px;
+}
+
+.inner-first-address-seller-order-hk-card{
+    position: relative;
+    top: 45px;
+    left: 51px;
+    font-size: 16px;
+    font-family: Raleway;
+    color: purple;
+    font-weight: bolder;
+}
+
+.inner-first-down-address-seller-order-hk-card{
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    font-family: Raleway;
+    justify-content: center;
+    top: 44px;
+    /* height: 120px; */
+    width: 171px;
+}
+
+.inner-second-address-seller-order-hk-card{
+    position: relative;
+    top: 56px;
+    left: 57px;
+    font-size: 16px;
+    font-family: Raleway;
+    color: purple;
+    font-weight: bolder;
+}
+
+.inner-second-down-address-seller-order-hk-card{
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    font-family: Raleway;
+    justify-content: center;
+    top: 55px;
+    width: 171px;
+}

@@ -1,0 +1,45 @@
+.heading-slide-hk-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding-bottom: 5px;
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: 900;
+    text-decoration: underline overline;
+
+}
+
+.heading-slide-hk-order-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 5px;
+    font-size: 28px;
+    font-family: Raleway;
+    font-weight: 900;
+    text-decoration: underline overline;
+
+}
+
+.top-heading-slide-hk-order{
+    padding-top: 40px;
+    /* padding-left: 6.5vw; */
+    font-size: 47px;
+    font-family: cursive;
+    font-weight: 600;
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+
+}
+
+.trackorder-div-single-order-hk{
+    width:250px;
+    height:100px;
+    background-size: contain;
+    /* translate: transform(-50%, -50%); */
+    /* margin-top: 50px; */
+}

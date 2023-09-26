@@ -1,0 +1,209 @@
+.fashion-products{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.top-fashion-single-page{
+    margin-top:100px;
+}
+
+.inner-div-hk-fashion{
+    display:flex;
+    width:100vw;
+    height:40vh;
+}
+
+.inner-inner-div-hk-fashion-1{
+    width:15vw;
+    height:40vh;
+    padding-left: 60px;
+}
+
+.inner-inner-div-hk-fashion-2{
+    width:5vw;
+    height:40vh;
+    
+    /* padding-left: 70px; */
+}
+
+.inner-inner-div-hk-fashion-3{
+    width:20vw;
+    height:40vh;
+    display: flex;
+}
+
+.inner-inner-div-hk-fashion-3 h1{
+    position: relative;
+    left:0;
+    font-size: 4rem;
+    font-family: R;
+    padding-left:30px;
+    padding-top:22vh;
+}
+
+.inner-inner-div-hk-fashion-4{
+    width:40vw;
+    height:40vh;
+}
+
+/* .inner-inner-div-hk-electronics-5{
+    width:20vw;
+    height:40vh;
+} */
+
+.inner-inner-div-hk-fashion-image{
+    height:40vh;
+    padding-top:14px;
+    background-size: cover;
+}
+
+.inner-inner-div-hk-fashion-image-tv{
+    height:40vh;
+    padding-top:30px;
+    padding-left: 150px;
+    background-size: cover;
+    z-index: 2;
+}
+
+.inner-inner-div-hk-fashion-image-red{
+    height:40vh;
+    background-size: cover;
+    z-index: 0;
+    /* padding-bottom: 40px; */
+}
+
+.inner-inner-div-hk-fashion-image-google{
+    height:50vh;
+    background-size: cover;
+    padding-bottom: 45px;
+}
+
+
+
+/* Path: src/shopper/FashionPage.js */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container-hkfashion-girls {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("https://www.thefashionisto.com/wp-content/uploads/2023/05/Mens-Trenchcoat.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("https://www.shahifits.in/wp-content/uploads/2020/01/Latest-Trend-in-Womens-Fashion.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("https://i.pinimg.com/736x/31/b1/c2/31b1c2775652516389dce74a012c9dd8--mens-boots-fashion-mens-fall-fashion.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("https://media.karousell.com/media/photos/products/2019/03/25/bollywood_dress__plus_size__hijab_friendly_1553486161_ce99e5b1.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(5) {
+        background: url("https://images.squarespace-cdn.com/content/v1/54661df4e4b0c1af99306b69/1600179639027-O3P80M9OHY7TK0L4E7ES/robert-downey-jr-double-breasted-suit.jpg?format=2500w")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(6) {
+        background: url("https://mikadopersonalstyling.com/wp-content/uploads/2020/06/womens-fashion-tips.jpg")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(7) {
+        background: url("https://i.pinimg.com/1200x/f6/35/c8/f635c89966f89a9c7b803a7fbe4888c0.jpg")
+          no-repeat 50% / cover;
+      }
+      &:nth-of-type(8) {
+        background: url("https://assets.ajio.com/medias/sys_master/root/20230623/aYEv/6494e300d55b7d0c63a9bfba/-1117Wx1400H-464645242-beige-MODEL5.jpg")
+          no-repeat 50% / cover;
+      }
+
+    .content-hkfashion-girls {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content-hkfashion-girls {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+
+.just-a-banner-img-hk-fashion{
+    display: flex;
+    height:41vh;
+    margin-top: 30px;
+    
+}
+
+.banner-image-products-hk-fashion{
+    background-image:url("https://marketplace.canva.com/EAFVHstxnwk/1/0/1600w/canva-beige-aesthetic-exclusive-fashion-wear-collection-clothing-banner-BZb4KkCdNP0.jpg");
+    height:40vh;
+    width:50%;
+    background-size: cover;
+    border: solid 3px white;
+    border-radius: 20px;
+}
+
+.banner-image-products-hk-right-fashion{
+    background-image:url("https://i.pinimg.com/originals/75/1d/2b/751d2b30f041d6a7ec336dbdef797311.jpg");
+    height:40vh;
+    width:50%;
+    border: solid 3px white;
+    background-size: cover;
+    border-radius: 20px;
+}

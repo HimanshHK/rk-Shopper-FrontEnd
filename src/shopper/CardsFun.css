@@ -1,0 +1,163 @@
+.container-hk-cards-fun {
+    --background: linear-gradient(to left, #880505 0%, #f36b11 100%);
+    width: 162px;
+  height: 203px;
+    padding: 4px;
+    border-radius: 5px;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    background: var(--background);
+    position: relative;
+  }
+  
+  .container-hk-cards-fun .box-hk-cards-fun {
+    position: relative;
+    width: 162px;
+    height: 203px;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .container-hk-cards-fun .box-hk-cards-fun .content-hk-cards-fun {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .container-hk-cards-fun .box-hk-cards-fun .content-hk-cards-fun .icon-hk-cards-fun {
+    width: 50px;
+    height: 50px;
+    -webkit-box-shadow: 0 0 0 4px #e6e6e6,
+      0 0 0 6px rgb(212, 10, 10);
+    box-shadow: 0 0 0 4px #e6e6e6,
+      0 0 0 6px rgb(212, 10, 10);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 2.5em;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container-hk-cards-fun .box-hk-cards-fun::before {
+    content: '';
+    position: absolute;
+    inset: -10px 50px;
+    border-top: 4px solid rgb(99, 89, 247);
+    z-index: -1;
+    border-bottom: 4px solid rgb(65, 44, 250);
+    z-index: -1;
+    z-index: -1;
+    -webkit-transform: skewY(15deg);
+    -ms-transform: skewY(15deg);
+    transform: skewY(15deg);
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container-hk-cards-fun .box-hk-cards-fun:hover::before {
+    -webkit-transform: skewY(0deg);
+    -ms-transform: skewY(0deg);
+    transform: skewY(0deg);
+    inset: -10px 40px;
+  }
+  
+  .container-hk-cards-fun .box-hk-cards-fun::after {
+    content: '';
+    position: absolute;
+    inset: 60px -10px;
+    border-left: 4px solid #880505;
+    z-index: -1;
+    border-right: 4px solid #aa551d;
+    z-index: -1;
+    -webkit-transform: skew(15deg);
+    -ms-transform: skew(15deg);
+    transform: skew(15deg);
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .container-hk-cards-fun .box-hk-cards-fun:hover::after {
+    -webkit-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    transform: skew(0deg);
+    inset: 40px -10px;
+  }
+  
+  .container-hk-cards-fun .box-hk-cards-fun .content-hk-cards-fun {
+    border-radius: 50%;
+  }
+  
+
+
+.content-hk-wish-cardfun img{
+  margin-left: 24px;
+  height: 55px;
+  width: 55px;
+  margin-top: 19px;
+  height:fit-content;
+}
+
+.card-hk-wish-cardfun::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ee9933;
+  transform: rotateZ(5deg);
+}
+
+.description-hk-wish-cardfun {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 0.6;
+}
+
+.info-hk-wish-cardfun {
+  color: #00000066;
+  font-size: 12px;
+}
+
+.price-hk-wish-cardfun::before {
+  content: "₹";
+}
+
+.price-hk-wish-cardfun {
+  font-weight: bold;
+  color: #ee9933;
+}

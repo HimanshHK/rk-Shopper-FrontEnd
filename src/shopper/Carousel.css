@@ -1,0 +1,81 @@
+.carousel-3d-div-main-hk {
+    width:100vw;
+    height:55vh;
+}
+.container-hk-carousel-3d {
+  color: white;
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel-hk-carousel-3d {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face-hk-carousel-3d {
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.span-hk-3d {
+  margin: auto;
+  font-size: 2rem;
+}
+
+.carousel__face-hk-carousel-3d:nth-child(1) {
+  background-image: url("https://cdn.pixabay.com/photo/2023/06/10/07/18/computer-8053372_1280.jpg");
+  transform: rotateY(0deg) translateZ(430px);
+}
+.carousel__face-hk-carousel-3d:nth-child(2) {
+  background-image: url("https://cutewallpaper.org/24/electronics-png/electronics-png-electronics-home-needs-png-clipart-large-size-png-image--pikpng.png");
+  transform: rotateY(40deg) translateZ(430px);
+}
+.carousel__face-hk-carousel-3d:nth-child(3) {
+  background-image: url("https://w7.pngwing.com/pngs/892/905/png-transparent-five-gray-front-load-clothes-washer-washing-machine-midea-home-appliance-advertising-haier-high-definition-dry-cleaning-machine-purple-electronics-high-heels.png");
+  transform: rotateY(80deg) translateZ(430px);
+}
+.carousel__face-hk-carousel-3d:nth-child(4) {
+  background-image: url("https://media.istockphoto.com/id/1390220550/photo/automatic-pick-and-place-machine-quickly-installs-components-on-generic-circuit-board.jpg?s=612x612&w=0&k=20&c=mqvdY2ELj2mxtgfN5cwEh8IhgnZYXZGVA6YGKu8Up0U=");
+  transform: rotateY(120deg) translateZ(430px);
+}
+.carousel__face-hk-carousel-3d:nth-child(5) {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxHbqU6Zr-jqv5qh24XageOCStrqEWRY8pZA&usqp=CAU");
+  transform: rotateY(160deg) translateZ(430px);
+}
+.carousel__face-hk-carousel-3d:nth-child(6) {
+  background-image: url("https://t3.ftcdn.net/jpg/02/37/11/96/360_F_237119664_mTl1rXqLQ0V3b1UgAX5vewsT0ezEQXs2.jpg");
+  transform: rotateY(200deg) translateZ(430px);
+}
+.carousel__face-hk-carousel-3d:nth-child(7) {
+  background-image: url("https://media.istockphoto.com/id/1211554164/photo/3d-render-of-home-appliances-collection-set.jpg?s=612x612&w=0&k=20&c=blm3IyPyZo5ElWLOjI-hFMG-NrKQ0G76JpWGyNttF8s=");
+  transform: rotateY(240deg) translateZ(430px);
+}
+.carousel__face-hk-carousel-3d:nth-child(8) {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVnWq-8GW1ZxmxA9vYgcAb21uPyjM7yHs7HQ&usqp=CAU");
+  transform: rotateY(280deg) translateZ(430px);
+}
+.carousel__face-hk-carousel-3d:nth-child(9) {
+  background-image: url("https://img.paisawapas.com/ovz3vew9pw/2021/10/06223906/amazon-trending.jpg");
+  transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}

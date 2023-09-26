@@ -1,0 +1,11 @@
+.seller-order-hk-div-outer{
+    display:flex;
+    flex-wrap:wrap;
+    /* align-items:center; */
+    /* justify-content:center; */
+}
+
+.more-seller-order-hk-div-outer{
+    padding-top:100px;
+    padding-left:13vw;
+}
