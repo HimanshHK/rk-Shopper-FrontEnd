@@ -1,0 +1,186 @@
+.heading-slide-hk{
+    padding-top: 1vh;
+    padding-left: 4.5vw;
+    padding-bottom: 0.9vh;
+    font-size: 23px;
+    font-family: auto;
+    font-weight: 600;
+}
+
+.top-heading-slide-hk{
+    padding-top: 340px;
+    padding-left: 4.5vw;
+    padding-bottom: 0.9vh;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: auto;
+}
+
+
+.main-div-product-hk{
+    width: 99vw;
+    height: 400px;
+    border-style: inherit;
+    /* background-image:url("https://r4.wallpaperflare.com/wallpaper/207/999/636/music-momoland-asian-girl-k-pop-hd-wallpaper-3e00fc73816c6fc8676d103776687de1.jpg") ; */
+    background-size: cover;
+}
+
+.just-a-banner-img-hk{
+    display: flex;
+    height:41vh;
+    
+}
+
+.banner-image-products-hk{
+    background-image:url("https://marketplace.canva.com/EAFYElY5EE4/1/0/1600w/canva-brown-and-white-modern-fashion-banner-landscape-Ap8IU9nEbh8.jpg");
+    height:40vh;
+    width:50%;
+    background-size: cover;
+}
+
+.banner-image-products-hk-right{
+    background-image:url("https://marketplace.canva.com/EAE8hiyAF3M/1/0/1600w/canva-fashion-style-landscape-banner-mc_7rOFLEMc.jpg");
+    height:40vh;
+    width:50%;
+    background-size: cover;
+}
+
+.just-a-banner-img-hk-below{
+    display: flex;
+    height:60vh;
+    
+}
+
+.banner-image-products-hk-below{
+    background-image:url("https://cdn.dribbble.com/users/1348777/screenshots/4359522/lafashion.gif");
+    height:58vh;
+    width:50%;
+    background-size: cover;
+}
+
+.banner-image-products-hk-right-below{
+    background-image:url("https://cdn.dribbble.com/users/2114334/screenshots/9840062/media/e9f301cb433d236ace05f2b84f085a51.gif");
+    height:58vh;
+    width:50%;
+    background-size: cover;
+}
+
+
+.just-a-banner-img-hk-below-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40vh;
+    
+}
+
+.banner-image-products-hk-below-more{
+    background-image:url("https://morecustomersapp.com/wp-content/uploads/2022/06/Banners-on-eCommerce-site.gif");
+    height:30vh;
+    width:33vw;
+    background-size:cover;
+    
+}
+
+.banner-image-products-hk-right-below-more{
+    background-image:url("https://themeforest.img.customer.envatousercontent.com/files/383483102/01_elehaus_preview.__large_preview.png?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=16aff7723e508d18f0458a35f335a1fc");
+    height:30vh;
+    width:33vw;
+    background-size:cover;
+    
+}
+
+
+.banner-image-products-hk-right-right-below-more{
+    background-image:url("https://w7.pngwing.com/pngs/453/862/png-transparent-responsive-web-design-bootstrap-online-shopping-template-fashion-store-gadget-electronics-retail.png");
+    height:30vh;
+    width:33vw;
+    background-size:cover;
+    
+}
+
+
+
+.just-a-banner-img-hk-below-more-hk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:43vh;
+    
+}
+
+.banner-image-products-hk-below-more-hk{
+    background-image:url("https://aadhmqulyo.cloudimg.io/v7/essential-addons.com/elementor/wp-content/uploads/2021/08/Grocery-Shop-Blog-Banner-1280x720-1.jpg");
+    height:40vh;
+    width:49.5vw;
+    background-size:cover;
+    
+}
+
+.banner-image-products-hk-right-below-more-hk{
+    background-image:url("https://i.pinimg.com/originals/25/9a/c9/259ac947325fb10b4640e624439f1040.jpg");
+    height:40vh;
+    width:49.5vw;
+    background-size:cover;
+}
+
+/*Home page items*/
+.home-hk-main-div{
+    display:flex;
+    flex-wrap: wrap;
+    // position:absolute; 
+    height:50vh;
+    // top:20vh;
+    width:100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 6vh;
+  }
+  
+  /*Icons cards*/
+  .icon-cards-hk-groceries {
+      width: 180px;
+      height: 90px;
+      transform: translate(-50%,-50%);
+      perspective: 1000px;
+    
+      /* This rotates with the animation */
+    
+      &__content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transform: translateZ(-145px) rotateY(0);
+        animation: carousel-hk-groceries 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
+      }
+    
+      /* Individual cards */
+    
+      &__item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 180px;
+        height: 150px;
+        background: #ff257a;
+        opacity: .8;
+        border-radius: 6px;
+    
+        &:nth-child(1) {
+          transform: rotateY(1*72deg) translateZ(145px);
+        }
+        &:nth-child(2) {
+          transform: rotateY(2*72deg) translateZ(145px);
+        }
+        &:nth-child(3) {
+          transform: rotateY(3*72deg) translateZ(145px);
+        }
+        &:nth-child(4) {
+          transform: rotateY(4*72deg) translateZ(145px);
+        }
+        &:nth-child(5) {
+          transform: rotateY(5*72deg) translateZ(145px);
+        }
+      }
+    }

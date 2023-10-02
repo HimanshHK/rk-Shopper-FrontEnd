@@ -5,17 +5,7 @@ import styled from "styled-components";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-// const IconCards = () => {
-//     return (
-//       <div className="icon-cards-hk-groceries">
-//         <div className="icon-cards-hk-groceries__content">
-//           {[1, 2, 3, 4, 5].map((index) => (
-//             <div className="icon-cards-hk-groceries__item" key={index}></div>
-//           ))}
-//         </div>
-//       </div>
-//     );
-//   };
+
 
 const Container = styled.div`
   height: 600px;
@@ -200,6 +190,7 @@ const DailyProductsPage = () => {
         {/* <div className="hk-cards-icon-div-groceries"> */}
         <Carousel/>
         {/* </div> */}
+        {/* <IconCards/> */}
 
         <DailyProducts/>
 

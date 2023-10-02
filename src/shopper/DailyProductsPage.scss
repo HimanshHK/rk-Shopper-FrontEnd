@@ -134,52 +134,7 @@
 $easing: cubic-bezier(1,.015,.295,1.225);
 
 /* Cards Icon */
-.icon-cards-hk-groceries {
-  width: 180px;
-  height: 160px;
-  transform: translate(-50%,-50%);
-  perspective: 1000px;
 
-  /* This rotates with the animation */
-
-  &__content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transform: translateZ(-145px) rotateY(0);
-    animation: carousel-hk-groceries 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
-  }
-
-  /* Individual cards */
-
-  &__item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 180px;
-    height: 150px;
-    background: #ff257a;
-    opacity: .8;
-    border-radius: 6px;
-
-    &:nth-child(1) {
-      transform: rotateY(1*72deg) translateZ(145px);
-    }
-    &:nth-child(2) {
-      transform: rotateY(2*72deg) translateZ(145px);
-    }
-    &:nth-child(3) {
-      transform: rotateY(3*72deg) translateZ(145px);
-    }
-    &:nth-child(4) {
-      transform: rotateY(4*72deg) translateZ(145px);
-    }
-    &:nth-child(5) {
-      transform: rotateY(5*72deg) translateZ(145px);
-    }
-  }
-}
 
 /* Animation */
 @keyframes carousel-hk-groceries {

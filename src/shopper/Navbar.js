@@ -179,7 +179,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="header-nav" style={location.pathname==="/"?{"position":"absolute"}:{"position":"fixed"}} onMouseLeave={unhighlightHeader}>
+      <div className="header-nav" onMouseLeave={unhighlightHeader}>
         <ul className="ul-nav">
           <li>
             <Link to="/">
@@ -193,7 +193,7 @@ export default function Navbar() {
           </li>
           {!showSidebar && (
             <>
-              <li
+              {/* <li
                 className="li-nav"
                 onClick={state ? unhighlightHeader : highlightHeader}
                 onMouseOver={highlightHeader}
@@ -201,7 +201,7 @@ export default function Navbar() {
                 <Link to="/trending" className="nav-link-hk-bar">
                   Trending
                 </Link>
-              </li>
+              </li> */}
               <li
                 className="li-nav"
                 name="electronics"

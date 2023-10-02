@@ -34,14 +34,15 @@ import WishList from "./shopper/WishList";
 import SingleOrder from "./shopper/SingleOrder";
 import SellerOrders from "./shopper/SellerOrders";
 // import ConfirmBox from "./shopper/ConfirmBox";
-import ShopperMainPage from "./shopper/ShopperMainPage";
+// import ShopperMainPage from "./shopper/ShopperMainPage";
 import ElectronicsPage from "./shopper/ElectronicsPage";
 import FashionPage from "./shopper/FashionPage";
 // import LoadingPage from "./shopper/Loading";
 import KitchenPage from "./shopper/KitchenPage";
 import DailyProductsPage from "./shopper/DailyProductsPage";
-import DairyPage from "./shopper/DairyPage";
+// import DairyPage from "./shopper/DairyPage";
 import Error from "./shopper/Error";
+// import HomePage from "./shopper/HomePage";
 
 export const UserContext = createContext(null);
 function App() {
@@ -58,7 +59,8 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path="/">
-              <ShopperMainPage />
+              {/* <ShopperMainPage /> */}
+              <ProductsPage />
             </Route>
             <Route exact path="/wishlist">
               <WishList />
@@ -69,39 +71,27 @@ function App() {
             <Route exact path="/daily">
               <DailyProductsPage />
             </Route>
-            <Route exact path="/dairy">
+            {/* <Route exact path="/dairy">
               <DairyPage />
-            </Route>
+            </Route> */}
             <Route exact path="/fashion" >
               <FashionPage />
             </Route>
             <Route exact path="/kitchen">
               <KitchenPage />
             </Route>
-            {/* <Route exact path="/confirm">
-              <ConfirmBox />
-            </Route> */}
-            {/* <Route exact path="/registered">
-              <Registered />
-            </Route> */}
             <Route exact path="/orders">
               <Orders />
             </Route>
             <Route exact path="/sellerorders">
               <SellerOrders />
             </Route>
-            {/* <Route exact path="/update">
-              <Update handleDataUser={handleDataUser} />
-            </Route> */}
-            {/* <Route exact path="/items">
-              <SellerItems />
-            </Route> */}
             <Route exact path="/cart">
               <Cart />
             </Route>
-            <Route exact path="/trending">
+            {/* <Route exact path="/trending">
               <ProductsPage />
-            </Route>
+            </Route> */}
             <Route exact path="/products">
               <Products />
             </Route>

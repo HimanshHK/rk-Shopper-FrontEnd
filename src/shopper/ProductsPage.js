@@ -1,7 +1,9 @@
 import React,{useEffect,useState} from "react";
-import "./ProductsPage.css";
+import "./ProductsPage.scss";
 import ProductsSlider from './ProductsSlider'
 import {hostUrl} from '../host'
+import Loading from "./Loading";
+
 
 export default function ProductsPage() {
     const [trendingProduct,changeTrendingProduct]=useState([]);
@@ -11,6 +13,7 @@ export default function ProductsPage() {
     const [topDealsProduct,changeTopDealsProduct]=useState([]);
     const [dailyProduct,changeDailyProduct]=useState([]);
     const [highDemandProduct,changeHighDemandProduct]=useState([]);
+    const [loading, changeLoading] = useState(true);
 
     useEffect(()=>{
         fetch(`${hostUrl}/api/products`)
@@ -112,7 +115,7 @@ export default function ProductsPage() {
             changeTopDealsProduct(arrtop.reverse());
             changeDailyProduct(arrdaily.reverse());
             changeHighDemandProduct(arrdemand);
-        
+            changeLoading(false);
         })
     },[]);
 
@@ -149,8 +152,9 @@ export default function ProductsPage() {
         },
     ]
 
-
-
+    if(loading)
+    return <Loading/>;
+    else
     return (
         <div>
         <div className='main-div-product-hk' style={{backgroundImage:`url(${process.env.PUBLIC_URL + "/background-product-page-hk.jpg"})`}}>
@@ -179,7 +183,7 @@ export default function ProductsPage() {
             <ProductsSlider item={groceriesProduct}/>
             <div className='heading-slide-hk'>Daily Use Items</div>
             <ProductsSlider item={highDemandProduct}/>
-            
+
             <div className="just-a-banner-img-hk-below-more-hk">
                 <div className="banner-image-products-hk-below-more-hk"></div>
                 <div className="banner-image-products-hk-right-below-more-hk"></div>

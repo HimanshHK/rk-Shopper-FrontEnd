@@ -157,6 +157,7 @@ const DairyProducts = () => {
 
     return(
         <div className="dairy-products">
+        {/* <Carousel/> */}
             {
                 products.map((product)=>{
                     return(
