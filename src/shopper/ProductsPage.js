@@ -2,7 +2,7 @@ import React,{useEffect,useState} from "react";
 import "./ProductsPage.scss";
 import ProductsSlider from './ProductsSlider'
 import {hostUrl} from '../host'
-import Loading from "./Loading";
+// import Loading from "./Loading";
 
 
 export default function ProductsPage() {
@@ -152,9 +152,9 @@ export default function ProductsPage() {
         },
     ]
 
-    if(loading)
-    return <Loading/>;
-    else
+    // if(loading)
+    // return <Loading/>;
+    // else
     return (
         <div>
         <div className='main-div-product-hk' style={{backgroundImage:`url(${process.env.PUBLIC_URL + "/background-product-page-hk.jpg"})`}}>

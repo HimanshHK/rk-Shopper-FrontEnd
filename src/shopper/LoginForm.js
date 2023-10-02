@@ -5,19 +5,12 @@ import { hostUrl } from "../host";
 import Cookies from 'js-cookie'
 
 const LoginForm = () => {
-
-  useEffect(()=>{
-    const token=Cookies.get('himanshukatoken');
-    console.log(token);
-  },[])
-
   const history = useHistory();
   const [pic, changePic] = useState(0);
   const [yeti, changeYeti] = useState(1);
   const [email, ChangeEmail] = useState("");
   const [password, ChangePassword] = useState("");
   const [login, setLogin] = useState(true);
-
   const [registerForm, changeRegisterForm] = useState({
     name: "",
     password: "",
@@ -33,6 +26,17 @@ const LoginForm = () => {
     email:"",
     password:""
   });
+
+  const currFrame = `/yeti${yeti}/ezgif-frame-${(pic + 1)
+    .toString()
+    .padStart(3, "0")}.jpg`;
+
+
+  useEffect(()=>{
+    const token=Cookies.get('himanshukatoken');
+    console.log(token);
+  },[])
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -59,9 +63,7 @@ const LoginForm = () => {
     history.push("/");
   };
 
-  const currFrame = `/yeti${yeti}/ezgif-frame-${(pic + 1)
-    .toString()
-    .padStart(3, "0")}.jpg`;
+  
 
   const handleLoginChange = (e) => {
     e.preventDefault();
@@ -83,6 +85,7 @@ const LoginForm = () => {
     changeLoginForm({...LoginForm,[e.target.name]:e.target.value});
     console.log(LoginForm);
   };
+
 
   const handleRadioChange = (e, type) => {
     e.preventDefault();
