@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import './NavComp.css'
 import Login from './Login'
 import {Link} from 'react-router-dom'
-import Help from './Help'
+// import Help from './Help'
 
 export default function NavComp(props){
     const [links,setLinks]=useState(
@@ -57,12 +57,7 @@ export default function NavComp(props){
                 <div className='quick-hk'>
                 <Link to="" className='link-hk-navbar'>Find a Store<br/></Link> 
                 
-                <Link to="" className='link-hk-navbar'>Order Status<br/></Link> 
-                <div className="normal-link-hk-nav">
-                <Link to="" className='link-hk-navbar'><Help/><br/></Link> 
-                </div>
-                
-                
+                <Link to="" className='link-hk-navbar'>Order Status<br/></Link>     
                 <Link to="" className='link-hk-navbar'>{props.list.eighth!=null && props.list.eighth}<br/></Link> 
                 
                 <Link to="" className='link-hk-navbar'>{props.list.ninth!=null && props.list.ninth}<br/></Link> 

@@ -4,7 +4,7 @@ import Slider from './Slider'
 import { hostUrl } from "../host";
 import Cookies from 'js-cookie';
 import Loading from "./Loading";
-import { set } from "lodash";
+
 
 export default function Orders() {
     const [orders,setOrders]=useState([]);

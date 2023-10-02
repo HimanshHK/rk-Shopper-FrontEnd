@@ -3,7 +3,6 @@ import { ADD_TO_CART, CLEAR_CART, COUNT_CART_TOTALS, REMOVE_CART_ITEM, TOGGLE_CA
 const cart_reducer = (state, action) => {
   if (action.type === ADD_TO_CART) {
     const { id, status , amount, product } = action.payload;
-    // const tempItem = state.cart.find((i) => i.id === id);
     console.log(state);
     console.log(id);
     let tempItem=false;

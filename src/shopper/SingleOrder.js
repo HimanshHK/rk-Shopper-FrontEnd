@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { hostUrl } from "../host";
 import Cookies from "js-cookie";
 import GridViewOrder from "./GridViewOrder";
-import Loading from "../components/Loading";
+import Loading from "./Loading";
 import "./SingleOrder.css";
 
 const SingleOrder = () => {

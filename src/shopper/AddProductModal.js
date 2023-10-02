@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
 // import LoginForm from './LoginForm';
-import LoginForm from './LoginForm';
 import AddProductForm from './AddProductForm';
 
 export default function AddProduct() {
