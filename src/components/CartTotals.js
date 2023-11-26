@@ -9,7 +9,7 @@ import { hostUrl } from '../host';
 import Cookies from 'js-cookie';
 
 const CartTotals = () => {
-    const { total_amount, shipping_fee, cart } = useCartContext();
+    const { total_amount, shipping_fee, cart,clearCart } = useCartContext();
     const { myUser, loinWithRedirect } = useUserContext();
     const [addressState,setAddressState]= useState(false);
     const [token,setToken]=useState("#");
@@ -58,6 +58,9 @@ const CartTotals = () => {
       .then((response) => response.json())
       .then((resData) => {
         console.log(resData);
+        clearCart();
+        alert("Order Placed Successfully");
+
       })
       .catch((err) => console.log(err));
       
