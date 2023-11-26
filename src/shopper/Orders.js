@@ -106,7 +106,6 @@ export default function Orders() {
     return (
         <>
             <div className='top-heading-slide-hk-order'>
-            //<img className='trackorder-div-single-order-hk' src="https://muvit.in/wp-content/uploads/2022/04/TRACKING-order-POSTER.jpg"/>
             <img className='trackorder-div-single-order-hk' src="https://www.mydesignation.com/wp-content/uploads/2020/08/delivery-banner.jpg"/>
             <img className='trackorder-div-single-order-hk' src="https://www.incredible.co.za/media/wysiwyg/istockphoto-183322339-612x612.jpg"/>
             
