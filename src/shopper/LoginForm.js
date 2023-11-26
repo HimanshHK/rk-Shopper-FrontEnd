@@ -131,10 +131,14 @@ const LoginForm = () => {
 
     .then((res) => res.json())
     .then((data) => {
-      Cookies.set('shopperWebToken', data.token, { expires: 1 });
-      const token=Cookies.get('shopperWebToken');
-      // console.log(token);
-      alert(token);
+      if(data.message==="User does not exist")
+      alert("User does not exist");
+      else{
+        Cookies.set('shopperWebToken', data.token, { expires: 1 });
+        const token=Cookies.get('shopperWebToken');
+        // console.log(token);
+        alert("Successfully Logged In");
+      }
     }
     ).catch((err) => console.log(err));
 
